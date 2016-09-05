@@ -1,0 +1,29 @@
+---
+title: "CodeBook"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Tidy Data Programming Assignment
+
+
+#### This codebook describes the activities I performed to complete the programming assignment as part of the coursera data cleansing class, during week 4.
+
+I first started by reading the Samsung Galaxy S smartphone dataset into R, and unzipping it into a subdirectory on my harddrive.
+
+This file contained 6 main dataset, 3 each in the testing and training folders.  I created script to read these individually into R.
+
+I then read the features and activity tables into R, associated with these files.
+
+I then used these files to establish column names for each of the datasets.
+
+Each dataset was then merged into a single dataset called combined_test_train
+
+Once the dataset is combined I then extract the mean and standard deviation of each measurement
+
+Lastly, I aggregated the extracted data into a single and tidy data set: tidy_data, and I wrote this data to Tidy_Data.txt
+
+
